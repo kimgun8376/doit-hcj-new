@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>친한 친구들 목록</title>
+</head>
+
+<body>
+  <header>
+    <h3>친한 친구 목록</h3>
+  </header>
+  <main>
+    <!-- 표(table) 3명 친구의 연락처, 주소 -->
+    <table border="2">
+      <!-- 타이틀 thead -->
+      <thead>
+        <tr>
+          <!-- 행 -->
+          <th>친구이름</th>
+          <th>연락처</th>
+          <th>주소</th>
+          <th>사진</th>
+        </tr>
+      </thead>
+      <!-- 데이터 tbody -->
+      <tbody>
+        <tr>
+          <td>친구1</td>
+          <td>010-1234-5678</td>
+          <td>대구 중구 200번지</td>
+          <td rowspan="2"><img src="이미지.jpg" width="100px" alt="친구이미지"></td>
+        </tr>
+        <tr>
+          <td>친구2</td>
+          <td>010-9874-6512</td>
+          <td colspan="2">대구 달서구 300번지</td>
+
+        </tr>
+        <tr>
+          <td>친구3</td>
+          <td>010-0000-0000</td>
+          <td>대구 달서구 2300번지</td>
+          <td rowspan="2"><img src="이미지.jpg" width="100px" alt="친구이미지"></td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="resume.html">내정보 이동</a>
+    <img src="이미지.jpg" width="100px">
+
+    <!-- 표(table) 종류,설명,용도 -->
+    <table border="2">
+      <colgroup>
+        <col style="width: 200px; background-color:antiquewhite; font-size: large;">
+        <col style="width: 250px; background-color: rgb(198, 230, 230); font-size: large;">
+        <col style="width: 250px;">
+      </colgroup>
+      <!-- 타이틀 thead -->
+      <style>
+        table,
+        th,
+        td {
+          border: 1px solid #ccc;
+          border-collapse: collapse;
+        }
+
+        th,
+        td {
+          padding: 10px 20px;
+        }
+
+        th {
+          background-color: aqua;
+        }
+      </style>
+      <thead>
+        <tr>
+          <!-- 행 -->
+          <th>종류</th>
+          <th>설명</th>
+          <th>용도</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GIF<br>(Graphic Interchange Format)</td>
+          <td>간단한 애니메이션을 지원합니다.표시할수 있는 색상 수가 최대 256가지라서 복잡한 이미지에는 적합하지 않습니다.</td>
+          <td>간단한 애니메이션이나 아이콘</td>
+        </tr>
+        <tr>
+          <td>JPG/JPEG<br>(joint photographic experts group)</td>
+          <td>고해상도 사진을 작은 파일 크기로 압축할 수 있어서 널리 사용합니다.하지만 손실 압축방식을 사용하므로 편집과정에서
+            화질을 떨어 질 수 있다는 단점이 있습니다. </td>
+          <td>사진이나 그래픽</td>
+        <tr>
+          <td>PNG<br>(portable network graphics)</td>
+          <td>투명 배경을 지원합니다.무손실 압축을 사용하므로 JPG보다 이미지를 더 나은 화질로 제공할 수 있습니다.단 JPG에 비해
+            파일의 크기가 커질수 있습니다.</td>
+          <td>화질 저하 없이 투명 배경이 필요한 그래픽</td>
+        </tr>
+        <tr>
+          <td>Webp</td>
+          <td>GIF와JPG,PNG의 장점을 하나로 결합한 이미지 형식 입니다.최신형식이므로 오래된 브라우저에서는 지원하지 않아 브라우저
+            호환성을 고려해야 합니다.</td>
+          <td>고해상도의 이미지를 작은 파일 크기로 제공할 떄</td>
+        </tr>
+
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>

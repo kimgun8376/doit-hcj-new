@@ -5,10 +5,25 @@
   <title>연습문제 2</title>
   <style>
     table, td, th {
-      border:1px solid #ccc;
+      border:3px solid #a38282;
+      border-collapse: collapse;
     }
     td, th {
       padding:10px 20px;
+    }
+
+    button {
+      wigth: 80px;
+      height:25px;
+    }
+
+    input {
+      padding: 10px;
+      display:inline-block;
+      background-color: width(63, 63, 35);
+    }
+    select{
+      padding: 5px;
     }
     td:last-child{
       width:200px;
@@ -16,6 +31,35 @@
   </style>
 </head>
 <body>
+  <h1>수습 국원 지원 양식</h1>
+  <table>
+    <tr>
+     <th rowspan="3">개인정보</th>
+     <th>이름</th> 
+     <td><input type="test"></td> 
+    </tr>
+    <tr>
+    <th>학과/학번</th> 
+    <td><input type="test"></td>   
+  </tr>
+    <tr>
+      <th>연락처</th> 
+      <td><input type="test"></td>
+    </tr>
+    <tr>
+    <th>지원분야</th>
+    <td colspan="2">
+      <select>
+        <option>방송진행</option>
+        <option>프로듀서</option>
+      </select>
+    </td>  
+    </tr>
+    <tr>
+      <td colspan="3" align="center"><button>지원하기</button></td>
+    </tr>
+  </table>
+
   
 </body>
 </html>
