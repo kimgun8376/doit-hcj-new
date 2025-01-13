@@ -9,6 +9,22 @@
 			height:300px;
 			margin:10px;
 		}
+		.grad1 {
+		background: red;
+		background: radial-gradient(white,red,yellow);
+		}
+		.grad2 {
+		background: darkgreen;
+		background: radial-gradient(circle closest-corner at 40% 50%, white,red,yellow);
+		}
+		.grad3 {
+		background: darkgreen;
+		background: radial-gradient(circle farthest-side at 40% 50%, white,red,yellow);
+		}
+		.grad4 {
+		background: darkgreen;
+		background: radial-gradient(circle farthest-corner at 40% 50%, white,red,yellow);
+		}
 
 		/* Do it!  타원형으로 흰색, 노란색, 빨간색으로 바뀌는 그러데이션 .grad1 스타일 만들기 */
 
@@ -20,5 +36,8 @@
 <body>
   <div class="grad1"></div>
   <div class="grad2"></div>
+	<div class="grad3"></div>
+  <div class="grad4"></div>
+
 </body>
 </html>

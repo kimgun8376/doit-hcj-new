@@ -9,7 +9,32 @@
     .pic img {
       width: 100%; /* 이미지가 .pic 에 가득차도록 */
       height: auto; /* 이미지의 비율을 유지 */
-    } 
+
+    }
+    .container {
+      display: flex;   /* 플렉스 컨테이너 지정 */
+      flex-wrap: wrap;  /* 여러 줄로 표시할 수 있도록 */
+      justify-content: space-around;  /* 항목들을 여백을 포함하여 균등하게 배치 */
+      gap: 10px; /* 항목 사이의 간격 설정 */
+    }
+
+    .pic {
+      flex-basis: 32%; /* 기본적으로 한 줄에 3개 항목 표시 */
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .pic {
+        flex-basis: 49%; 
+      }
+    }
+
+    /* 뷰포트 너비가 768px 이하일 때 한 줄에 1개 항목 표시 */
+    @media (max-width: 768px) {
+      .pic {
+        flex-basis: 100%; 
+      }
+    }
+    
+   
   </style>
 </head>
 <body>

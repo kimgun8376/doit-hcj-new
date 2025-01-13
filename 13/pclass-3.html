@@ -22,6 +22,27 @@
     }
 
     /* Do it! 가상 선택자를 사용해 항목 선택하기 */
+    .container :first-child {
+      background-color: #fc2;
+    }
+    .container :last-child {
+      background-color: #2cf;
+    }
+    .container div:only-child {
+      background-color: #f0c8fc;
+    }
+    .container :nth-child(3){
+      background-color: #333;
+    }
+    body :last-child{
+      border: 2px solid green;
+    }
+    .container>:nth-child(1){
+      border: 5px solid red;
+    }
+    .container>:nth-child(2){
+      border: 5px solid darkblue;
+    }
 
   </style>
 </head>

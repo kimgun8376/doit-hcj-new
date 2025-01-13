@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>미디어 쿼리 사용하기</title>
   <style>
+    @import url(css/table.css) only sreen and (mix-width:321px) and (max-width:768px);
+    @import url(css/mobile.css) only sreen (max-width:768px);
+
     body {
       display: flex;
       justify-content: center;
@@ -19,7 +22,19 @@
       background: url(images/bg-light.jpg) no-repeat fixed;  
       background-size: cover;
     }
-
+     @media screen and (min-width: 768px) and (max-width: 1023px){
+      body{
+        background: url(images/bg-dark.jpg) no-repeat fixed;
+        background-size: cover;
+        color:#fff;
+      }
+     }
+     @media screen and (min-width: 768px) and (max-width: 1023px){
+      body{
+        background: url(images/bg-dark.jpg) no-repeat fixed;
+        background-size: cover;
+        color:#fff;}
+      }
   </style>
 </head>
 <body>

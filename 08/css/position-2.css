@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 #contents {
@@ -10,9 +10,14 @@
   width: 800px;
   height: 500px;
   margin: 0 auto;
+  position: relative;
 }
+
 h1 {
-  color: #fff;
-  font-size: 120px;
+  color: red;
+  font-size: 50px;
   text-shadow: 2px 3px 0 #000;
+  position: absolute;
+  left: 50px;
+  bottom: 80px;
 }
