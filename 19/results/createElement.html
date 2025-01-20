@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  친구이름 :<input type="text" name="friendName">
+  <button>친구추가</button>
+  <ul id="friendList">
+    <li>홍길동<button>삭제</button></li>
+  </ul>
+
+  <script>
+    //친구추가 버튼을 클릭하면 입력값을 li로 추가.
+    document.querySelector('button').addEventListener('click', function () {
+      let userValue = document.querySelector('input[name="friendName"]').value;
+      if (!userValue) {
+        alert('이름을 입력하세여');
+        return;
+      }
+      
+      let childItem = document.createElement('li');
+      childItem.innerHTML = userValue;
+      let btn = document.createElement('button');
+      btn.addEventListener('click', function () {
+        let result = confirm('선택한 요소를 삭제하겠습니까?');
+        if (result) {
+          childItem.remove(); //요소를 삭제 
+        } else {
+          alert('요소를 취소했습니다.');
+        }
+      }); // 신규생성된 li에 클릭이벤트 등록.
+
+      btn.innerHTML = '삭제';
+      childItem.appendChild(btn);
+
+      document.querySelector('#friendList').appendChild(childItem);
+      document.querySelector('input[name="friendName"]').value = '';
+    })
+
+
+    /*document.createElement("li")
+    document.createText("")
+    newItem.appendChild(textNode)
+    document.querySelector('ul').appendChild("newItem")*/
+  </script>
+</body>
+
+</html>
